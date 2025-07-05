@@ -1,0 +1,123 @@
+/* Main container for signup page */
+.signup-page {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Image container styling */
+.signup-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.signup-image img {
+    max-width: 80%;
+    border-radius: 8px;
+}
+
+/* Form container styling */
+.signup-form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: white;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    color: #002366; /* Royal blue */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Input fields styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #002366;
+    outline: none;
+}
+
+/* Error message */
+.error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Submit button styling */
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #002366; /* Royal blue */
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+}
+
+.btn-submit:hover {
+    background-color: #004080;
+}
+
+/* Log in link styling */
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.login-link a {
+    color: #002366;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signup-page {
+        flex-direction: column;
+    }
+
+    .signup-image {
+        padding: 1rem;
+    }
+
+    .signup-form {
+        padding: 1rem;
+    }
+}
